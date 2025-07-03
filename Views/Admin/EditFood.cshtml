@@ -1,0 +1,42 @@
+﻿@model Flavour_Fiesta.Models.FoodItem
+
+@{
+    ViewData["Title"] = "Edit Food";
+    Layout = "_Layout";
+}
+@section styles{
+    <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+}
+   
+
+
+    <div class="container">
+        <h2>Edit Food</h2>
+
+        <form asp-action="EditFood" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="Id" />
+
+            <label>Name:</label>
+            <input asp-for="Name" />
+
+            <label>Category:</label>
+            <select asp-for="Category">
+                <option>Veg</option>
+                <option>NonVeg</option>
+              
+            </select>
+
+            <label>Price:</label>
+            <input asp-for="Price" />
+
+            <label>Quantity:</label>
+            <input asp-for="Quantity" />
+
+            <label>Image URL:</label>
+            <input asp-for="ImageUrl" type="file" accept="image/*" />
+
+            <button type="submit">Update</button>
+        </form>
+    </div>
+

@@ -1,0 +1,22 @@
+﻿
+@model List<Flavour_Fiesta.Models.CartItem>
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+   
+<h2>Checkout</h2>
+<table class="table">
+    <tr><th>Item</th><th>Quantity</th><th>Subtotal</th></tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FoodItem.Name</td>
+            <td>@item.Quantity</td>
+            <td>₹@(item.Quantity* item.FoodItem.Price)</td>
+        </tr>
+    }
+</table>
+<h3>Total: ₹@ViewBag.Total</h3>

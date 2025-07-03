@@ -1,0 +1,159 @@
+﻿
+
+/* Add Food , Edit Food Items */
+body {
+    margin: 0;
+    background-color: #fddbb1;
+}
+
+.top-bar {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.home-btn {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    background-color: #e09145;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.container {
+    padding: 40px;
+    max-width: 500px;
+    margin: auto;
+    background-color: #fddbb1;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e09145;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+        background-color: #cf7a2b;
+    }
+
+input[type="file"] {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Manage Food List */
+.top-bar {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #e09145;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    float: right;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Food-container {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fddbb1;
+}
+
+
+.add-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    background-color: #e09145;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+    table th, table td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: #e09145;
+        color: white;
+    }
+
+img {
+    border-radius: 8px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.action-links a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+    .action-links a:hover {
+        text-decoration: underline;
+    }
