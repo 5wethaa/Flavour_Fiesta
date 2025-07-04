@@ -14,7 +14,7 @@ body {
 /* HEADER */
 .main-header {
     background: #f4a261;
-    padding: 15px 0;
+    padding: 12px 24px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,8 +29,7 @@ body {
 
 .logo-section {
     display: flex;
-    align-items: center;
-    top: 35px;
+    top: 30px;
     right: 10px;
     gap: 10px;
 }

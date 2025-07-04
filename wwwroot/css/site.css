@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,8 +29,8 @@
 .header-top {
     display: flex;
     align-items: center;
-    gap: 10px;
-    top: 35px;
+    gap: 15px;
+    top: 15px;
     right: 10px;
     flex-wrap: nowrap;
 }
@@ -227,7 +227,8 @@
     background-size: cover;
     padding: 15px 0;
     text-align: center;
-    height: auto;
+    height: 15vh;
+    margin:0;
 }
 
     #footer h2 {
