@@ -11,4 +11,5 @@ obj/
 # System files
 .DS_Store
 Thumbs.db
-Migrations
+# Ignore EF Core migrations
+Flavour_Fiesta.DataAccess/Migrations/
