@@ -1,0 +1,14 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.dbmdl
+*.log
+# JetBrains Rider / VS Code
+.idea/
+.vscode/
+# System files
+.DS_Store
+Thumbs.db
+Migrations

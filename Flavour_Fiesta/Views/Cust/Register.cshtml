@@ -1,0 +1,54 @@
+﻿@model Flavour_Fiesta.Domain.Models.Customer
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Flavour Fiesta</title>
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Create an Account</h2>
+
+        <form asp-action="Register" method="post">
+            <div>
+                @Html.LabelFor(m => m.Email)
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-group" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+
+            <div>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password, new { @class = "form-group" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+
+            <div>
+                @Html.LabelFor(m => m.ConfirmPassword)
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-group" })
+                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+            </div>
+
+            <button type="submit" class="Btn">Sign Up</button>
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @if (ViewBag.Message != null)
+            {
+                <div style="color:red">@ViewBag.Message</div>
+            }
+        </form>
+
+        <div style="text-align:center; margin-top: 15px;">
+            <p>Already have an account? <a href="/Cust/Login">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

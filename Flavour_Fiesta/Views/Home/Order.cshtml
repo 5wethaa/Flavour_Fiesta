@@ -1,0 +1,181 @@
+﻿@{
+    ViewData["Title"] = "Order page";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Order</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    @section Styles {
+    <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+
+    <style>
+    
+        body {
+            background-color: #fdf7f1;   
+        }
+
+        .orderform {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: bisque;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+        }
+
+            .orderform h1 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+            .form-group label {
+                width: 150px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                flex: 1;
+                padding: 8px;
+                font-size: 16px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+            }
+
+            .form-group textarea {
+                resize: vertical;
+            }
+
+        .orderform button[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #e0893c;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .orderform button[type="submit"]:hover {
+                background-color: #cf782c;
+            }
+
+
+
+        #backHomeBtn {
+            margin-top: 15px;
+            width: fit-content;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            display: none;
+            
+        }
+    </style>
+    }
+</head>
+<body>
+    <div class="orderform">
+
+        <h1>Order Online</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="food">Select Dish:</label>
+                <select id="food" name="food" required>
+                    <option value="">--Choose a Dish--</option>
+                    <option>Chicken Ghee Biriyani</option>
+                    <option>Mutton Biriyani</option>
+                    <option>Fish Biriyani</option>
+                    <option>Chicken Chettinad</option>
+                    <option>Chicken 65</option>
+                    <option>Prawn Tikka</option>
+                    <option>Spicy Mutton Curry</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+
+            <button type="submit">Place Order</button>
+           
+        </form>
+    </div>
+        @section Scripts{
+        <script>
+            $(document).ready(function () {
+                $("form").on("submit", function (e) {
+                    e.preventDefault();
+
+                    // Remove any existing message/button
+                    $("#orderSuccess, #backHomeBtn").remove();
+
+                    // Create success message
+                                const successMsg =$('<div id="orderSuccess">Your order has been placed!!</div>').css({
+                                                     "text-align": "center",
+                                                      "color": "green",
+                                                      "font-weight": "bold",
+                                                      "margin-top": "20px",
+                                                      "font-size": "20px"});
+
+                    //  back to home button
+                    const backBtn = $('<button id="backHomeBtn" style="display: block;margin: 20px auto;">Back to Home</button>');
+
+                    // When button is clicked, go to homepage
+                    backBtn.on("click", function () {
+                        window.location.href = "/";
+                    });
+                    
+                    $(this).find("button[type='submit']").after(successMsg, backBtn);
+
+                 
+                    successMsg.fadeIn(500);
+                    backBtn.fadeIn(700);
+
+                    $(this).trigger("reset");
+                });
+            });
+        </script>
+        }
+ 
+</body>
+</html>
