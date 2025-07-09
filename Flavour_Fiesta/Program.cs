@@ -1,7 +1,7 @@
 ﻿using Flavour_Fiesta.Data;
 using Flavour_Fiesta.DataAccess.Interfaces;
 using Flavour_Fiesta.DataAccess.Repositories;
-using Flavour_Fiesta.Service.Interfaces;
+using Flavour_Fiesta.Domain.Interfaces;
 using Flavour_Fiesta.Service.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,7 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        b => b.MigrationsAssembly("Flavour_Fiesta.DataAccess")   
+    ));
+
 builder.Services.AddSession();
 
 // DataAcces Repositories

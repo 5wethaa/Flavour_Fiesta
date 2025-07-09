@@ -4,51 +4,39 @@
     Layout = "_Layout";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Register - Flavour Fiesta</title>
-    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-</head>
-<body>
-    <div class="container">
-        <h2>Create an Account</h2>
+<title>Login - Flavour Fiesta</title>
+<link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-        <form asp-action="Register" method="post">
-            <div>
-                @Html.LabelFor(m => m.Email)
-                @Html.TextBoxFor(m => m.Email, new { @class = "form-group" })
-                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-            </div>
+<div class="container">
+    <h2>Create an Account</h2>
 
-            <div>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password, new { @class = "form-group" })
-                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-            </div>
-
-            <div>
-                @Html.LabelFor(m => m.ConfirmPassword)
-                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-group" })
-                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
-            </div>
-
-            <button type="submit" class="Btn">Sign Up</button>
-
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            @if (ViewBag.Message != null)
-            {
-                <div style="color:red">@ViewBag.Message</div>
-            }
-        </form>
-
-        <div style="text-align:center; margin-top: 15px;">
-            <p>Already have an account? <a href="/Cust/Login">Login</a></p>
+    <form asp-action="Register" method="post">
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
         </div>
+
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ConfirmPassword"></label>
+            <input asp-for="ConfirmPassword" type="password" class="form-control" />
+        </div>
+
+        <button type="submit" class="Btn">Sign Up</button>
+
+        @if (ViewBag.Message != null)
+        {
+            <div style="color:red">@ViewBag.Message</div>
+        }
+    </form>
+
+    <div style="text-align:center; margin-top:15px;">
+        <p>Already have an account? <a asp-controller="Cust" asp-action="Login">Login</a></p>
     </div>
-</body>
-</html>
+</div>

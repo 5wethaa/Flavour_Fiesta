@@ -22,26 +22,26 @@ namespace Flavour_Fiesta.Data
             //Customer Model
             modelBuilder.Entity<Customer>(entity =>
             {
-                entity.HasKey(e => e.Id); 
+                entity.HasKey(e => e.Id);
 
                 entity.Property(e => e.Email)
-                      .IsRequired()      
+                      .IsRequired()
                       .HasMaxLength(100);
 
-                //entity.Property(e => e.Password)
-                //      .IsRequired();     
-                entity.Property(e => e.PasswordHash).IsRequired();
-               
-
+                entity.Property(e => e.PasswordHash)
+                      .IsRequired();
 
                 entity.Property(e => e.IsConfirmed)
                       .HasDefaultValue(false);
+
+                // Not mapped in DB
                 entity.Ignore(e => e.Password);
                 entity.Ignore(e => e.ConfirmPassword);
             });
+        
 
-            // FoodItem Model
-            modelBuilder.Entity<FoodItem>(entity =>
+        // FoodItem Model
+        modelBuilder.Entity<FoodItem>(entity =>
             {
                 entity.HasKey(e => e.Id);
 

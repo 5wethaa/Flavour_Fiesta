@@ -1,0 +1,16 @@
+# Ignore VS files
+.vs/
+
+# Build results
+bin/
+obj/
+
+# Git folders
+.git/
+.github/
+
+# Ignore EF Migrations 
+**/Migrations/
+
+# Ignore secrets
+appsettings.Development.json

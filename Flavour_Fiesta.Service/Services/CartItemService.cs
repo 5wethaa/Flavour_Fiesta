@@ -1,6 +1,5 @@
 ﻿using Flavour_Fiesta.Domain.Models;
-using Flavour_Fiesta.DataAccess.Interfaces;
-using Flavour_Fiesta.Service.Interfaces;
+using Flavour_Fiesta.Domain.Interfaces;
 
 namespace Flavour_Fiesta.Service.Services
 {

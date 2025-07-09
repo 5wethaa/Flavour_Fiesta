@@ -1,5 +1,5 @@
-﻿using Flavour_Fiesta.Domain.Models;
-using Flavour_Fiesta.Service.Interfaces;
+﻿using Flavour_Fiesta.Domain.Interfaces;
+using Flavour_Fiesta.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Flavour_Fiesta.Controllers
@@ -31,7 +31,7 @@ namespace Flavour_Fiesta.Controllers
                 return View(model);
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return View(model);
             try
             {
@@ -41,7 +41,7 @@ namespace Flavour_Fiesta.Controllers
                      return View(model);
                 }
 
-                TempData["SuccessMessage"] = message;
+                TempData["SuccessMessage"] = "Registration successful!";
                 return RedirectToAction("Login");
             }
             catch (Exception ex)

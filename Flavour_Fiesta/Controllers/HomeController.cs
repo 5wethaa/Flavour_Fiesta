@@ -1,8 +1,8 @@
 ﻿using Flavour_Fiesta.Domain.Models;
-using Flavour_Fiesta.Service.Interfaces;
 using Flavour_Fiesta.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Flavour_Fiesta.Domain.Interfaces;
 
 namespace Flavour_Fiesta.Controllers
 {
