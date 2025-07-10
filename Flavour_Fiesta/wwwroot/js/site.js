@@ -18,7 +18,8 @@ $('.Food-items').on('mouseenter touchstart', function () {
 }).on('mouseleave touchend', function () {
         $(this).removeClass('zoom');
 });
-    
+
+   
 });
 
 

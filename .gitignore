@@ -25,6 +25,6 @@ Flavour_Fiesta/obj/
 # Entity Framework Migrations
 Flavour_Fiesta.DataAccess/Migrations/
 
-# Ignore appsettings files
-appsettings.json
-appsettings.Development.json
+**/Dockerfile
+**/.dockerignore
+*.dockerfile

@@ -6,5 +6,7 @@ namespace Flavour_Fiesta.Domain.Interfaces
     {
         bool Register(Customer customer, out string message);
         Customer? Login(string email, string password, out string message);
+
+        
     }
 }

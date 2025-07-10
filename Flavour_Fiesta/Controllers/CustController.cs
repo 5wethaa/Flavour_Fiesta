@@ -37,8 +37,8 @@ namespace Flavour_Fiesta.Controllers
             {
                 if (!_customerService.Register(model, out string message))
                 {
-                     ModelState.AddModelError("Email", message);
-                     return View(model);
+                    ModelState.AddModelError("Email", message);
+                    return View(model);
                 }
 
                 TempData["SuccessMessage"] = "Registration successful!";
@@ -52,7 +52,7 @@ namespace Flavour_Fiesta.Controllers
             }
 
 
-            
+
         }
 
         [HttpGet]
@@ -85,5 +85,9 @@ namespace Flavour_Fiesta.Controllers
             }
 
         }
+
+
+
+        
     }
 }

@@ -1,7 +1,6 @@
 ﻿using Flavour_Fiesta.Domain.Models;
-using Flavour_Fiesta.DataAccess.Interfaces;
-using BCrypt.Net;
 using Flavour_Fiesta.Domain.Interfaces;
+using Flavour_Fiesta.Service.Helpers;
 
 namespace Flavour_Fiesta.Service.Services
 {
@@ -23,8 +22,7 @@ namespace Flavour_Fiesta.Service.Services
                 return false;
             }
 
-            // ✅ Hash the password
-            customer.PasswordHash = BCrypt.Net.BCrypt.HashPassword(customer.Password);
+            customer.PasswordHash = PasswordHelper.HashPassword(customer.Password);
             customer.IsConfirmed = true;
 
             _repository.Add(customer);
@@ -34,10 +32,8 @@ namespace Flavour_Fiesta.Service.Services
 
         public Customer? Login(string email, string password, out string message)
         {
-            var user = _repository.GetByEmail(email); // 🔍 Get user by email only
-
-            // ✅ Check if user exists and password matches
-            if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.PasswordHash) || !user.IsConfirmed)
+            var user = _repository.GetByEmail(email);
+            if (user == null || !PasswordHelper.VerifyPassword(password, user.PasswordHash) || !user.IsConfirmed)
             {
                 message = "Invalid credentials or unconfirmed user.";
                 return null;
@@ -47,6 +43,7 @@ namespace Flavour_Fiesta.Service.Services
             return user;
         }
 
+       
         public Task<(bool IsSuccess, string Message)> RegisterAsync(Customer customer)
         {
             throw new NotImplementedException();

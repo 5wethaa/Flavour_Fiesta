@@ -8,6 +8,7 @@
         public string ConfirmPassword { get; set; } = string.Empty;
         public string PasswordHash { get; set; } = string.Empty;
         public bool IsConfirmed { get; set; }
+        
     }
 }
 

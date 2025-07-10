@@ -15,8 +15,4 @@
     <ProjectReference Include="..\Flavour_Fiesta.Domain\Flavour_Fiesta.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\Helper\" />
-  </ItemGroup>
-
 </Project>
