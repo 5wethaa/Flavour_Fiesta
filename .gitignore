@@ -1,6 +1,16 @@
-# Build results
-bin/
-obj/
+# Ignore bin and obj folders in all projects
+Flavour_Fiesta.DataAccess/bin/
+Flavour_Fiesta.DataAccess/obj/
+
+Flavour_Fiesta.Domain/bin/
+Flavour_Fiesta.Domain/obj/
+
+Flavour_Fiesta.Service/bin/
+Flavour_Fiesta.Service/obj/
+
+Flavour_Fiesta/bin/
+Flavour_Fiesta/obj/
+
 
 # User-specific files
 *.user
@@ -12,8 +22,8 @@ obj/
 # Logs
 *.log
 
-# Ignore EF Core Migrations
-**/Migrations/
+# Entity Framework Migrations
+Flavour_Fiesta.DataAccess/Migrations/
 
 # Ignore appsettings files
 appsettings.json
