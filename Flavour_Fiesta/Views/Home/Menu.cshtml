@@ -6,6 +6,7 @@
     Layout = null;
 }
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +64,7 @@
 
    
     <!--  Food Items -->
-    <div id="Food-container">
+    <div id="food-container">
         @if (!Model.Any())
         {
             <p style="text-align:center; font-size:18px;">No items matched your search or filter.</p>
@@ -72,7 +73,7 @@
         {
             foreach (var item in Model)
             {
-                <div class="Food-items" data-category="@item.Category">
+                <div class="food-items" data-category="@item.Category">
                     <img src="@item.ImageUrl" />
                     <h3>@item.Name</h3>
                     <p>₹@item.Price  •  @item.Quantity</p>
