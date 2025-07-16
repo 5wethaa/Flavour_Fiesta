@@ -1,0 +1,107 @@
+﻿@model List<Flavour_Fiesta.Domain.Models.FoodItem>
+@using System.Linq
+
+@{
+    ViewData["Title"] = "Menu";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Fiesta - Menu</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="~/js/site.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="top-bar">
+            <div class="header-top">
+                <img src="~/images/logo-removebg-preview.png" />
+                <h1><span>Flavour</span><br /><span>Fiesta</span></h1>
+
+                <!-- Search and Filter -->
+                <form method="get" asp-controller="Home"  asp-action="Menu" class="searchForm">
+                    <div class="search-wrapper">
+                      
+                        <input type="text" name="query" id="searchBar" placeholder="Search Food..." />
+                        <img src="~/images/filter.jpg" id="filterIcon" alt="Filter" />
+                        <button type="submit" id="searchIcon" style="border:none; background: none;">
+                            <img src="~/images/search.png" alt="Search" />
+                        </button>
+                        
+                     
+                        
+                    </div>
+                </form>
+            </div>
+
+                <!-- Filter Panel -->
+                <div class="filterPanel" style="display: none;">
+                    <form method="get" asp-action="Menu">
+                        <input type="hidden" name="query" value="@Context.Request.Query["query"]" />
+                        <label><input type="radio" name="category" value="" checked /> All</label>
+                        <label><input type="radio" name="category" value="Veg" /> Veg</label>
+                        <label><input type="radio" name="category" value="NonVeg" /> Non-Veg</label>
+                        <button type="submit">Apply</button>
+                    </form>
+                </div>
+           
+
+            <nav class="navigation">
+                <a asp-controller="Cart" asp-action="ViewCart" class="btn">Cart</a>
+                <a href="/home/Index" class="btn">Home</a>
+            </nav>
+        </div>
+    </div>
+   
+
+   
+    <!--  Food Items -->
+    <div id="food-container">
+        @if (!Model.Any())
+        {
+            <p style="text-align:center; font-size:18px;">No items matched your search or filter.</p>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <div class="food-items" data-category="@item.Category">
+                    <img src="@item.ImageUrl" />
+                    <h3>@item.Name</h3>
+                    <p>₹@item.Price  •  @item.Quantity</p>
+                    <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                        <input type="hidden" name="foodItemId" value="@item.Id" />
+                        <button type="submit" class="add-btn" data-item-name="@item.Name">Add</button>
+                    </form>
+                </div>
+            }
+        }
+    </div>
+   
+@if (TempData["Toast"] != null)
+{
+    <div id="toast">@TempData["Toast"]</div>
+
+    <script>
+        setTimeout(function () {
+            const t = document.getElementById('toast');
+            if (t) t.style.opacity = '0';
+        }, 5000);
+    </script>
+}
+
+ <footer id="footer">
+            <p>&copy; 2025 - Flavour Fiesta. All rights reserved.</p>
+        </footer>
+
+    
+
+   
+</body>
+</html>

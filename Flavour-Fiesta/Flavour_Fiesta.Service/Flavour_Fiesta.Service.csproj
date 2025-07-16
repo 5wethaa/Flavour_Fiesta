@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Flavour_Fiesta.DataAccess\Flavour_Fiesta.DataAccess.csproj" />
+    <ProjectReference Include="..\Flavour_Fiesta.Domain\Flavour_Fiesta.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+﻿@model Flavour_Fiesta.Domain.Models.FoodItem
+@{
+    ViewData["Title"] = "Add Food";
+    Layout = "_Layout";
+}
+
+@section HeaderExtras {
+    <a href="/Admin/FoodList" class="home-button">Back to Dashboard</a>
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    }
+
+    <div class="container">
+        <h2>Add New Food</h2>
+        <form asp-action="AddFood" method="post" enctype="multipart/form-data">
+       <div>
+        <label>Name:</label>
+        <input asp-for="Name" />
+       </div>
+
+        <div>
+        <label>Category:</label>
+        <select asp-for="Category">
+            <option>Veg</option>
+            <option>NonVeg</option>
+        </select>
+        </div>
+
+        <div>
+        <label>Price:</label>
+        <input asp-for="Price" />
+        </div>
+
+        <div>
+        <label>Quantity:</label>
+        <input asp-for="Quantity" />
+        </div>
+
+        <div>
+        <label>Image: </label>
+        <input asp-for="ImageUrl" type="file" accept="image/*" />
+        </div>
+
+        <button type="submit">Add</button>
+    </form>
+    </div>
+
+
