@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kaar User\\source\\repos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Migrations\\20250710123632_AddResetTokenToCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.DataAccess\\Migrations\\20250710123632_AddResetTokenToCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICustomerService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.Domain\\Interfaces\\ICustomerService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\Views\\Home\\Menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\Views\\Home\\Order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Controllers\\CustController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\Controllers\\CustController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\css\\_Layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\wwwroot\\css\\_Layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\IFoodItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.Domain\\Interfaces\\IFoodItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Data\\ApplicationDbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.DataAccess\\Data\\ApplicationDbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\Customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.Domain\\Models\\Customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\FoodItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.Domain\\Models\\FoodItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICustomerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.Domain\\Interfaces\\ICustomerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Repositories\\CustomerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.DataAccess\\Repositories\\CustomerRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Cust\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\Views\\Cust\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Admin\\FoodList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta\\Views\\Admin\\FoodList.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICartItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.Domain\\Interfaces\\ICartItemService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\CartItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Flavour_Fiesta.Domain\\Models\\CartItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.Domain\\Interfaces\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICustomerService.cs",
+              "RelativeToolTip": "Flavour_Fiesta.Domain\\Interfaces\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T04:52:49.096Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Menu.cshtml",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\Views\\Home\\Menu.cshtml",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Menu.cshtml",
+              "RelativeToolTip": "Flavour_Fiesta\\Views\\Home\\Menu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T05:17:24.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Flavour_Fiesta\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T04:59:40.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Flavour_Fiesta\\wwwroot\\css\\site.css",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-14T11:06:03.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Order.cshtml",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\Views\\Home\\Order.cshtml",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Home\\Order.cshtml",
+              "RelativeToolTip": "Flavour_Fiesta\\Views\\Home\\Order.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T05:17:34.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Flavour_Fiesta\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T04:28:34.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustController.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Controllers\\CustController.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\Controllers\\CustController.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Controllers\\CustController.cs",
+              "RelativeToolTip": "Flavour_Fiesta\\Controllers\\CustController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T10:01:27.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.css",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\css\\_Layout.css",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\wwwroot\\css\\_Layout.css",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\css\\_Layout.css",
+              "RelativeToolTip": "Flavour_Fiesta\\wwwroot\\css\\_Layout.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-11T04:00:12.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IFoodItemService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\IFoodItemService.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.Domain\\Interfaces\\IFoodItemService.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\IFoodItemService.cs",
+              "RelativeToolTip": "Flavour_Fiesta.Domain\\Interfaces\\IFoodItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T04:53:28.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbcontext.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Data\\ApplicationDbcontext.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.DataAccess\\Data\\ApplicationDbcontext.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Data\\ApplicationDbcontext.cs",
+              "RelativeToolTip": "Flavour_Fiesta.DataAccess\\Data\\ApplicationDbcontext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:23:00.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.Domain\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\Customer.cs",
+              "RelativeToolTip": "Flavour_Fiesta.Domain\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T16:45:01.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FoodItem.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\FoodItem.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.Domain\\Models\\FoodItem.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\FoodItem.cs",
+              "RelativeToolTip": "Flavour_Fiesta.Domain\\Models\\FoodItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T12:47:50.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.Domain\\Interfaces\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "Flavour_Fiesta.Domain\\Interfaces\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T10:03:03.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.DataAccess\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "Flavour_Fiesta.DataAccess\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T10:03:24.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\appsettings.Development.json",
+              "RelativeToolTip": "Flavour_Fiesta\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-10T12:28:53.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250710123632_AddResetTokenToCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Migrations\\20250710123632_AddResetTokenToCustomer.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.DataAccess\\Migrations\\20250710123632_AddResetTokenToCustomer.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.DataAccess\\Migrations\\20250710123632_AddResetTokenToCustomer.cs",
+              "RelativeToolTip": "Flavour_Fiesta.DataAccess\\Migrations\\20250710123632_AddResetTokenToCustomer.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T12:36:32.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Cust\\Login.cshtml",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\Views\\Cust\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Cust\\Login.cshtml",
+              "RelativeToolTip": "Flavour_Fiesta\\Views\\Cust\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T07:18:16.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Flavour_Fiesta\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-10T10:42:39.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FoodList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Admin\\FoodList.cshtml",
+              "RelativeDocumentMoniker": "Flavour_Fiesta\\Views\\Admin\\FoodList.cshtml",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta\\Views\\Admin\\FoodList.cshtml",
+              "RelativeToolTip": "Flavour_Fiesta\\Views\\Admin\\FoodList.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-09T09:50:24.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ICartItemService.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICartItemService.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.Domain\\Interfaces\\ICartItemService.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Interfaces\\ICartItemService.cs",
+              "RelativeToolTip": "Flavour_Fiesta.Domain\\Interfaces\\ICartItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T05:04:58.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Flavour_Fiesta.Domain\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\Kaar User\\source\\repos\\Flavour_Fiesta.Domain\\Models\\CartItem.cs",
+              "RelativeToolTip": "Flavour_Fiesta.Domain\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T15:56:53.365Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
