@@ -83,7 +83,7 @@ namespace Flavour_Fiesta.Data
                       .OnDelete(DeleteBehavior.Cascade);
 
                 entity.Property(e => e.Quantity)
-                      .IsRequired();
+                      .IsRequired(); 
             });
 
 

@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>net9.0</TargetFramework>
-		<Nullable>disable</Nullable>
+		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<RootNamespace>Flavour_Fiesta</RootNamespace>
 		<UserSecretsId>7d01e3ce-f446-47e8-bdad-670ca2ae8adf</UserSecretsId>

@@ -15,7 +15,8 @@
 
     <div class="container">
         <h2>Add New Food</h2>
-        <form asp-action="AddFood" method="post" enctype="multipart/form-data">
+       <form asp-action="AddFood" method="post" enctype="multipart/form-data">
+
        <div>
         <label>Name:</label>
         <input asp-for="Name" />
@@ -41,7 +42,8 @@
 
         <div>
         <label>Image: </label>
-        <input asp-for="ImageUrl" type="file" accept="image/*" />
+         <input type="file" name="imageFile" accept="image/*" />
+
         </div>
 
         <button type="submit">Add</button>

@@ -9,39 +9,44 @@
     <a href="/Admin/FoodList" class="home-button">Back to Dashboard</a>
 }
 
-@section styles{
+@section styles {
     <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
 }
-   
 
+<div class="container">
+    <h2>Edit Food</h2>
 
-    <div class="container">
-        <h2>Edit Food</h2>
+    <form asp-action="EditFood" method="post">
+        <input type="hidden" asp-for="Id" />
 
-        <form asp-action="EditFood" method="post" enctype="multipart/form-data">
-            <input type="hidden" asp-for="Id" />
+        <label>Name:</label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
 
-            <label>Name:</label>
-            <input asp-for="Name" />
+        <label>Category:</label>
+        <select asp-for="Category">
+            <option>Veg</option>
+            <option>NonVeg</option>
+        </select>
+        <span asp-validation-for="Category" class="text-danger"></span>
 
-            <label>Category:</label>
-            <select asp-for="Category">
-                <option>Veg</option>
-                <option>NonVeg</option>
-              
-            </select>
+        <label>Price:</label>
+        <input asp-for="Price" />
+        <span asp-validation-for="Price" class="text-danger"></span>
 
-            <label>Price:</label>
-            <input asp-for="Price" />
+        <label>Quantity:</label>
+        <input asp-for="Quantity" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
 
-            <label>Quantity:</label>
-            <input asp-for="Quantity" />
+        <label>Image URL:</label>
+        <input asp-for="ImageUrl" type="file" accept="image/*" />
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
 
-            <label>Image URL:</label>
-            <input asp-for="ImageUrl" type="file" accept="image/*" />
+        <button type="submit">Update</button>
+    </form>
+</div>
 
-            <button type="submit">Update</button>
-        </form>
-    </div>
-
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

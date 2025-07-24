@@ -49,9 +49,19 @@ namespace Flavour_Fiesta.DataAccess.Repositories
 
         public async Task UpdateAsync(FoodItem item)
         {
-            _context.FoodItems.Update(item);
-            await _context.SaveChangesAsync();
+            var existingItem = await _context.FoodItems.FindAsync(item.Id);
+            if (existingItem != null)
+            {
+                existingItem.Name = item.Name;
+                existingItem.Price = item.Price;
+                existingItem.Quantity = item.Quantity;
+                existingItem.Category = item.Category;
+                existingItem.ImageUrl = item.ImageUrl;
+
+                await _context.SaveChangesAsync();
+            }
         }
+
 
         public async Task DeleteAsync(int id)
         {

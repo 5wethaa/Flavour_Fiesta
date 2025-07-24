@@ -1,5 +1,4 @@
 ﻿using Flavour_Fiesta.Domain.Interfaces;
-using Flavour_Fiesta.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Flavour_Fiesta.Controllers

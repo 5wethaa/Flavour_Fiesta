@@ -19,7 +19,7 @@ namespace Flavour_Fiesta.Service.Services
             if (existing != null)
             {
                 message = "Email already registered.";
-                return false;
+                return false ;
             }
 
             customer.PasswordHash = PasswordHelper.HashPassword(customer.Password);
