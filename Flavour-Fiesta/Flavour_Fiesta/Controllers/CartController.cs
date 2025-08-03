@@ -1,4 +1,5 @@
 ﻿using Flavour_Fiesta.Domain.Interfaces;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace Flavour_Fiesta.Controllers
@@ -55,6 +56,13 @@ namespace Flavour_Fiesta.Controllers
                 return RedirectToAction("Menu", "Home");
             }
             
+        }
+
+        [HttpPost]
+        public IActionResult UpdateQuantity(int cartItemId, string operation)
+        {
+            _cartService.UpdateQuantity(cartItemId, operation);
+            return RedirectToAction("ViewCart");
         }
 
         [HttpPost]

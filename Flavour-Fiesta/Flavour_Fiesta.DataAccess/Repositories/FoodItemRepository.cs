@@ -1,5 +1,6 @@
-﻿using Flavour_Fiesta.Data;
-using Flavour_Fiesta.DataAccess.Interfaces;
+﻿using Flavour_Fiesta.DataAccess;
+using Flavour_Fiesta.DataAccess.Data;
+using Flavour_Fiesta.Domain.Interfaces;
 using Flavour_Fiesta.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 

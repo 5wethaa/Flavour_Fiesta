@@ -1,4 +1,5 @@
-﻿using Flavour_Fiesta.Data;
+﻿using Flavour_Fiesta.DataAccess;
+using Flavour_Fiesta.DataAccess.Data;
 using Flavour_Fiesta.Domain.Interfaces;
 using Flavour_Fiesta.Domain.Models;
 using Microsoft.EntityFrameworkCore;
@@ -61,6 +62,15 @@ namespace Flavour_Fiesta.DataAccess.Repositories
                 .Include(ci => ci.FoodItem)
                 .Where(ci => ci.CustomerId == customerId)
                 .SumAsync(ci => ci.FoodItem.Price * ci.Quantity);
+        }
+        public CartItem? GetById(int cartItemId)
+        {
+            return _context.CartItems.FirstOrDefault(c => c.Id == cartItemId);
+        }
+
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
         }
     }
 }

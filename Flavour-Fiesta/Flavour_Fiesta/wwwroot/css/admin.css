@@ -3,7 +3,7 @@
 /* Add Food , Edit Food Items */
 body {
     margin: 0;
-    background-color: #fddbb1;
+    background-color: #fff3e0;
 }
 
 
@@ -24,7 +24,9 @@ body {
     padding: 40px;
     max-width: 500px;
     margin: auto;
-    background-color: #fddbb1;
+    background-color: #ffe0b2;
+   /* border: 2px solid #e09145;*/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .container h2 {

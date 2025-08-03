@@ -20,7 +20,23 @@
     {
         <tr>
             <td>@item.FoodItem.Name</td>
-            <td>@item.Quantity</td>
+            @* <td>@item.Quantity</td> *@
+            <td>
+                <div class="quantity-container">
+                    <form asp-action="UpdateQuantity" method="post">
+                        <input type="hidden" name="cartItemId" value="@item.Id" />
+                        <button class="quantity-button" name="operation" value="decrease">−</button>
+                    </form>
+
+                    <span>@item.Quantity</span>
+
+                    <form asp-action="UpdateQuantity" method="post">
+                        <input type="hidden" name="cartItemId" value="@item.Id" />
+                        <button class="quantity-button" name="operation" value="increase">+</button>
+                    </form>
+                </div>
+            </td>
+
             <td>₹@item.FoodItem.Price</td>
             <td>
                 <form asp-action="RemoveFromCart" method="post">

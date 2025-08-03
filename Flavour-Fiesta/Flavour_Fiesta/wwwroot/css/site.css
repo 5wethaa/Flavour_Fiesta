@@ -123,6 +123,44 @@
         background-color: #933d13;
     }
 
+/* Quantity button styling */
+.quantity-button {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #333;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+    .quantity-button:hover {
+        background-color: #ddd;
+        border-color: #999;
+    }
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+    .table th, .table td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+
+
 /* Responsive: Tablet or Split-Screen Laptops (≤991px) */
 @media (max-width: 991px) {
     .navigation {

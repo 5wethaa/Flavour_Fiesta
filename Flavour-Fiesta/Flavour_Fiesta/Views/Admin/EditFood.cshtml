@@ -17,7 +17,7 @@
 <div class="container">
     <h2>Edit Food</h2>
 
-    <form asp-action="EditFood" method="post">
+    <form asp-action="EditFood" method="post" enctype="multipart/form-data">
         <input type="hidden" asp-for="Id" />
 
         <label>Name:</label>
@@ -39,9 +39,11 @@
         <input asp-for="Quantity" />
         <span asp-validation-for="Quantity" class="text-danger"></span>
 
-        <label>Image URL:</label>
-        <input asp-for="ImageUrl" type="file" accept="image/*" />
-        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        <label>Current Image:</label><br />
+        <img src="@Model.ImageUrl" width="120" style="margin-bottom:10px;" /><br />
+
+        <label>Change Image (optional):</label>
+        <input type="file" name="imageFile" accept="image/*" />
 
         <button type="submit">Update</button>
     </form>

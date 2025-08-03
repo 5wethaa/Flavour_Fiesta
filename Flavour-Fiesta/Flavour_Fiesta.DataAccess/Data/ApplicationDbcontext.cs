@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Flavour_Fiesta.Data
+namespace Flavour_Fiesta.DataAccess.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -14,6 +14,7 @@ namespace Flavour_Fiesta.Data
         public DbSet<Customer> Customers{ get; set; }
         public DbSet<FoodItem> FoodItems { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -86,6 +87,18 @@ namespace Flavour_Fiesta.Data
                       .IsRequired(); 
             });
 
+            modelBuilder.Entity<Feedback>(entity =>
+            {
+                entity.HasKey(f => f.Id);
+                entity.Property(f => f.Name).IsRequired().HasMaxLength(100);
+                entity.Property(f => f.Email).IsRequired();
+                entity.Property(f => f.Rating).IsRequired();
+                entity.Property(f => f.Comments)
+                      .IsRequired()
+                      .HasMaxLength(1000);
+                entity.Property(f => f.SubmittedAt).IsRequired();
+            });
+           
 
 
         }

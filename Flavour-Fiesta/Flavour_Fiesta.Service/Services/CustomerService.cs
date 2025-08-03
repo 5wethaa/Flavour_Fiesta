@@ -1,4 +1,5 @@
-﻿using Flavour_Fiesta.Domain.Models;
+﻿
+using Flavour_Fiesta.Domain.Models;
 using Flavour_Fiesta.Domain.Interfaces;
 using Flavour_Fiesta.Service.Helpers;
 
@@ -19,7 +20,7 @@ namespace Flavour_Fiesta.Service.Services
             if (existing != null)
             {
                 message = "Email already registered.";
-                return false ;
+                return false;
             }
 
             customer.PasswordHash = PasswordHelper.HashPassword(customer.Password);
@@ -33,25 +34,26 @@ namespace Flavour_Fiesta.Service.Services
         public Customer? Login(string email, string password, out string message)
         {
             var user = _repository.GetByEmail(email);
-            if (user == null || !PasswordHelper.VerifyPassword(password, user.PasswordHash) || !user.IsConfirmed)
+            if (user == null)
             {
-                message = "Invalid credentials or unconfirmed user.";
+                message = "User not found.";
+                return null;
+            }
+
+            if (!PasswordHelper.VerifyPassword(password, user.PasswordHash))
+            {
+                message = "Invalid password.";
+                return null;
+            }
+
+            if (!user.IsConfirmed)
+            {
+                message = "Account not confirmed.";
                 return null;
             }
 
             message = "Login successful.";
             return user;
-        }
-
-       
-        public Task<(bool IsSuccess, string Message)> RegisterAsync(Customer customer)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<(Customer? User, string Message)> LoginAsync(string email, string password)
-        {
-            throw new NotImplementedException();
         }
     }
 }

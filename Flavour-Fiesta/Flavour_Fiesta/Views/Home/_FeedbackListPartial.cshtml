@@ -1,0 +1,22 @@
+﻿@model List<Flavour_Fiesta.Domain.Models.Feedback>
+
+@if (Model.Any())
+{
+    foreach (var item in Model.OrderByDescending(f => f.SubmittedAt))
+    {
+        <div class="card my-3 p-3">
+            @{
+                var filledStars = new string('★', item.Rating);
+                var emptyStars = new string('☆', 5 - item.Rating);
+            }
+            <strong>@item.Name</strong>
+            <span class="rating">@filledStars@emptyStars</span>
+            <p>@item.Comments</p>
+            <small class="text-muted">@item.SubmittedAt.ToString("g")</small>
+        </div>
+    }
+}
+else
+{
+    <p>No feedback yet. Be the first to share your thoughts!</p>
+}

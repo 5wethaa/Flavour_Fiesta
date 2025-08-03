@@ -1,0 +1,68 @@
+﻿@model Flavour_Fiesta.Models.FeedbackPageViewModel
+
+@{
+    ViewData["Title"] = "Feedback";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="~/css/feedback.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+
+<h2>Submit Your Feedback</h2>
+
+
+<div class="feedback-container">
+    <!-- ADD THIS -->
+
+    <form id="feedbackForm" asp-controller="Home" asp-action="SubmitFeedbackAjax" method="post">
+        <div class="form-group">
+            <label asp-for="Form.Name"></label>
+            <input asp-for="Form.Name" class="form-control" />
+            <span asp-validation-for="Form.Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Form.Email"></label>
+            <input asp-for="Form.Email" class="form-control" />
+            <span asp-validation-for="Form.Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Form.Rating"></label>
+            <input asp-for="Form.Rating" type="number" min="1" max="5" class="form-control" />
+            <span asp-validation-for="Form.Rating" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Form.Comments"></label>
+            <textarea asp-for="Form.Comments" class="form-control" rows="4"></textarea>
+            <span asp-validation-for="Form.Comments" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+
+    <div id="feedbackSuccess" class="alert alert-success mt-3 d-none">
+        Thank you! Your feedback has been submitted.
+    </div>
+
+</div>
+
+<hr />
+
+<h3>Customer Review</h3>
+<div id="feedbackList" class="review-list">
+    <div class="feedback-entry">
+        <div class="feedback-header">
+            <strong>Swetha</strong> <span class="rating">★★★★★</span>
+        </div>
+        <p class="comment">Great taste! Loved the spice blend.</p>
+        <span class="email">swetha@example.com</span>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+}

@@ -1,6 +1,6 @@
 ﻿using Flavour_Fiesta.Domain.Models;
 
-namespace Flavour_Fiesta.DataAccess.Interfaces
+namespace Flavour_Fiesta.Domain.Interfaces
 {
     public interface IFoodItemRepository
     {

@@ -1,6 +1,9 @@
-﻿using Flavour_Fiesta.Domain.Interfaces;
+﻿
+using Flavour_Fiesta.Domain.Interfaces;
 using Flavour_Fiesta.Domain.Models;
+using Flavour_Fiesta.Models;
 using Microsoft.AspNetCore.Mvc;
+
 
 namespace Flavour_Fiesta.Controllers
 {
@@ -9,13 +12,13 @@ namespace Flavour_Fiesta.Controllers
         private readonly ICustomerService _customerService;
         private readonly ILogger<CustController> _logger;
 
-        public CustController(ICustomerService customerService,
-                              ILogger<CustController> logger)
+        public CustController(ICustomerService customerService, ILogger<CustController> logger)
         {
             _customerService = customerService;
             _logger = logger;
         }
 
+        //REGISTER 
         [HttpGet]
         public IActionResult Register()
         {
@@ -23,21 +26,29 @@ namespace Flavour_Fiesta.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(Customer model)
+        public IActionResult Register(RegisterViewModel model)
         {
+            if (!ModelState.IsValid)
+                return View(model);
+
             if (model.Password != model.ConfirmPassword)
             {
                 ModelState.AddModelError("ConfirmPassword", "Passwords do not match.");
                 return View(model);
             }
 
-            if (!ModelState.IsValid)
-                return View(model);
+            var customer = new Customer
+            {
+                Email = model.Email,
+                Password = model.Password,
+                ConfirmPassword = model.ConfirmPassword
+            };
+
             try
             {
-                if (!_customerService.Register(model, out string message))
+                if (!_customerService.Register(customer, out string message))
                 {
-                    ModelState.AddModelError("Email", message);
+                    ModelState.AddModelError("Email", message); // e.g., "Email already registered"
                     return View(model);
                 }
 
@@ -50,11 +61,9 @@ namespace Flavour_Fiesta.Controllers
                 ModelState.AddModelError("", "Unexpected error — please try again later.");
                 return View(model);
             }
-
-
-
         }
 
+        // LOGIN
         [HttpGet]
         public IActionResult Login()
         {
@@ -62,32 +71,33 @@ namespace Flavour_Fiesta.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string email, string password)
+        public IActionResult Login(LoginViewModel model)
         {
+            if (!ModelState.IsValid)
+                return View(model);
+
             try
             {
-                var user = _customerService.Login(email, password, out string message);
+                var user = _customerService.Login(model.Email, model.Password, out string message);
+
                 if (user == null)
                 {
-                    ViewBag.Message = message;
-                    return View();
+                    ModelState.AddModelError(string.Empty, message); // e.g., "Invalid password" or "User not found"
+                    return View(model);
                 }
 
                 HttpContext.Session.SetString("CustomerId", user.Id.ToString());
                 HttpContext.Session.SetString("UserEmail", user.Email);
+
                 return RedirectToAction("Menu", "Home");
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Login failed for {Email}", email);
-                ViewBag.Message = "Unable to log in right now. Please try again later.";
-                return View();
+                _logger.LogError(ex, "Login failed for {Email}", model.Email);
+                ModelState.AddModelError("", "Unable to log in right now. Please try again later.");
+                return View(model);
             }
-
         }
-
-
-
-        
     }
 }
+

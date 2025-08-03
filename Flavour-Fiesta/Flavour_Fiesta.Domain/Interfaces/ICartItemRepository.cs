@@ -8,5 +8,7 @@ namespace Flavour_Fiesta.Domain.Interfaces
         Task AddOrUpdateAsync(int customerId, int foodItemId);
         Task RemoveAsync(int cartItemId);
         Task<decimal> CalculateTotalAsync(int customerId);
+        CartItem? GetById(int cartItemId);
+        void SaveChanges();
     }
 }

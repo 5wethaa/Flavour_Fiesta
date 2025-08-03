@@ -1,10 +1,13 @@
-﻿@model Flavour_Fiesta.Domain.Models.Customer
+﻿
+
+@model Flavour_Fiesta.Models.RegisterViewModel
+
 @{
     ViewData["Title"] = "Register";
     Layout = "_Layout";
 }
 
-<title>Login - Flavour Fiesta</title>
+<title>Register - Flavour Fiesta</title>
 <link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -13,30 +16,34 @@
     <h2>Create an Account</h2>
 
     <form asp-action="Register" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+
         <div class="form-group">
             <label asp-for="Email"></label>
             <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="Password"></label>
             <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="ConfirmPassword"></label>
             <input asp-for="ConfirmPassword" type="password" class="form-control" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
         </div>
 
-        <button type="submit" class="Btn">Sign Up</button>
-
-        @if (ViewBag.Message != null)
-        {
-            <div style="color:red">@ViewBag.Message</div>
-        }
+        <button type="submit" class="Btn">Sign Up</button>
     </form>
 
     <div style="text-align:center; margin-top:15px;">
         <p>Already have an account? <a asp-controller="Cust" asp-action="Login">Login</a></p>
     </div>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
